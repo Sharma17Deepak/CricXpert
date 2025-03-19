@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/CricXpert/static/css/main.3106c38f.css",
+    "main.js": "/CricXpert/static/js/main.deb91a03.js",
+    "static/js/453.2456f9a6.chunk.js": "/CricXpert/static/js/453.2456f9a6.chunk.js",
+    "static/media/Sun.svg": "/CricXpert/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/Moon.svg": "/CricXpert/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "index.html": "/CricXpert/index.html",
+    "main.3106c38f.css.map": "/CricXpert/static/css/main.3106c38f.css.map",
+    "main.deb91a03.js.map": "/CricXpert/static/js/main.deb91a03.js.map",
+    "453.2456f9a6.chunk.js.map": "/CricXpert/static/js/453.2456f9a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3106c38f.css",
+    "static/js/main.deb91a03.js"
+  ]
+}
