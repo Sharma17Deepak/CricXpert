@@ -29,7 +29,8 @@ const News = () => {
               <div className="newscard" key={curVal.id}>
                 <h2>{curVal.name}</h2>
                 <p>{curVal.description}</p>
-                <a href={curVal.url} className="newslink">Read More</a>
+                <a href={curVal.url} className="newslink" target="_blank"
+                rel="noopener noreferrer" >Read More</a>
               </div>
             );
           })
