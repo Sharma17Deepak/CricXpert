@@ -29,7 +29,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -109,7 +110,8 @@ body{
 
 .search-bar button {
   width: 100px;
-  height: 32px;
+  height: 30px;
+  margin-left: 10px;
   background-color: crimson;
   color: white;
   font-size: 18px;
