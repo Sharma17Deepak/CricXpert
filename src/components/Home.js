@@ -9,7 +9,7 @@ const Home = () => {
   const getData = async () => {
     try {
       const response = await fetch(
-        "https://api.cricapi.com/v1/cricScore?apikey=c4cb7d0b-c4b1-47fa-9ed8-2cee2b1ccd81"
+        "https://api.cricapi.com/v1/cricScore?apikey=c4cb7d0b-c4b1-47fa-9ed8-2cee2b1ccd81",
       );
       const api_data = await response.json();
       setMatchdata(api_data.data);
@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
       <div className="heading">
-        <img src={circle} alt="circle_image"/>
+        <img src={circle} alt="circle_image" />
         <p>Live Cricket Score App</p>
       </div>
       <div className="search-bar">
@@ -47,7 +47,12 @@ const Home = () => {
         {matchdata ? (
           matchdata.map((curVal) => {
             if (curVal.status !== "Match not started") {
-              if (curVal.series.toLowerCase().includes(search.toLowerCase()) || curVal.t1.toLowerCase().includes(search.toLowerCase()) || curVal.t2.toLowerCase().includes(search.toLowerCase()) || search === "") {
+              if (
+                curVal.series.toLowerCase().includes(search.toLowerCase()) ||
+                curVal.t1.toLowerCase().includes(search.toLowerCase()) ||
+                curVal.t2.toLowerCase().includes(search.toLowerCase()) ||
+                search === ""
+              ) {
                 return (
                   <div className="card" key={curVal.id}>
                     <h3>Series Name : {curVal.series}</h3>
@@ -59,7 +64,7 @@ const Home = () => {
                         <p>{curVal.t1s}</p>
                       </div>
                       <div>
-                        <img src={curVal.t2img} alt="team_image"/>
+                        <img src={curVal.t2img} alt="team_image" />
                         <p>{curVal.t2}</p>
                         <p>{curVal.t2s}</p>
                       </div>
@@ -72,7 +77,9 @@ const Home = () => {
             return null;
           })
         ) : (
-          <p className="err">Data Not Found ! Please Try Again After Some Time </p>
+          <p className="err">
+            Data Not Found ! Please Try Again After Some Time{" "}
+          </p>
         )}
       </div>
     </>
