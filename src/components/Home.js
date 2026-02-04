@@ -54,12 +54,12 @@ const Home = () => {
                     <h3>Format : {curVal.matchType}</h3>
                     <div className="img">
                       <div>
-                        <img src={curVal.t1img} />
+                        <img src={curVal.t1img} alt="team_image" />
                         <p>{curVal.t1}</p>
                         <p>{curVal.t1s}</p>
                       </div>
                       <div>
-                        <img src={curVal.t2img} />
+                        <img src={curVal.t2img} alt="team_image"/>
                         <p>{curVal.t2}</p>
                         <p>{curVal.t2s}</p>
                       </div>
